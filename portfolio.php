@@ -45,12 +45,15 @@
         	<a class="nav" href="#contact">contact me</a> if you have a creative need that I can help with.</p>
         
         	<ul id="welcthumbs">
-				<li><a class="nav" href="#portfolio" title="Drawing II"><img class="welc" src="img/portfolioImages/welcome1.png" alt="image 1" /></a></li>
-				<li><a class="nav" href="#portfolio" title="Hi Fi Octopii"><img class="welc" src="img/portfolioImages/welcome2.png" alt="image 2" /></a></li>
-				<li><a class="nav" href="#portfolio" title="2D Design"><img class="welc" src="img/portfolioImages/welcome4.png" alt="image 3" /></a></li>
-				<li><a class="nav" href="#portfolio" title="Tech Time Poster"><img class="welc" src="img/portfolioImages/welcome7.png" alt="image 4" /></a></li>
-				<li><a class="nav" href="#portfolio" title="Drawing II"><img class="welc" src="img/portfolioImages/welcome6.png" alt="image 5" /></a></li>
-				<li><a class="nav" href="#portfolio" title="Techranger Site Redesign"><img class="welc" src="img/portfolioImages/welcome5.png" alt="image 6" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome1.png" alt="Drawing" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome2.png" alt="Web Design" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome4.png" alt="2D Design" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome7.png" alt="Graphic Design" /></a></li>
+
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome6.png" alt="Drawing" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome5.png" alt="Web Design" /></a></li>
+				<li><a class="nav" href="http://www.linkedin.com/pub/corrinne-schultze/89/649/375/"><img class="welc" src="img/linkedin.png" alt="LinkedIn" /></a></li>
+				<li><a class="nav" href="#portfolio"><img class="welc" src="img/thumbs/welcome5.png" alt="image 6" /></a></li>
 			</ul>
         </div> 
 		<!-- End Welcome section -->
