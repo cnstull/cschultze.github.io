@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Try jQuery</title>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+	var i = 0;	
+ 	
+  	function findSelector() {
+		
+		var textinput = $("#input").val();
+		var regex1 = /\$\('|"(.*)"|'\)/gi; // selects the class/id without quotes
+		//          /\$\(('|")(.*)('|")\)/gi; // selects the class/id with quotes
+		//			/\.([a-zA-Z]+)\((.*)\)/gi;	// selects things after the . (inclusive)
+		var regex2 = /\$\(('|")(.*)('|")\).([a-zA-Z]+)\((.*)\)/gi;  // selects the entire select and everything after the . minus the ;
+		
+		matches = regex1.exec(textinput);
+		console.log(matches[1]);
+		//$("#instructions").find(matches[2]).addClass("highlight"); //adds class highlight to classes and ids selected
+			
+	}
+	
+	/**
+	 * Controls the "Next" button for the steps/instructions. It will be hidden on the last step. 
+	 * 
+	 * @param object $elems - jQuery object; array of the steps from jquerysteps.html
+	 * @param object Description of variable
+	 *
+	 * @return void
+	 */
+	function nextClick(elems, e) {
+		e.preventDefault();
+		$("#next").off("click");
+		$("#instructions").fadeOut(500, function(){
+		
+			$("#instructions").empty();
+			if(i < elems.length) {
+				
+				var $elem=$(elems[i]);
+				$("#instructions").append($elem);
+				$elem.fadeIn(500);
+				//$("#instructions").append(elems[i]);
+				console.log(elems[i]);
+				$("#prev").fadeIn(500);
+				
+				if(i == elems.length-1) {
+					$("#next").fadeOut(500);
+				}
+				//i++;
+			}
+			$("#instructions").fadeIn(500, function(){
+				$("#next").on({
+					click: function(ev) {
+						nextClick(elems, ev);
+					}
+				});		
+			});
+		});
+	}
+	
+	
+	/**
+	 * Controls the "Previous" button for the steps/instructions. It will be hidden on the first step. 
+	 * 
+	 * @param object $elems - jQuery object; array of the steps from jquerysteps.html
+	 * @param object Description of variable
+	 *
+	 * @return void
+	 */
+	function prevClick(elems, e) {
+		e.preventDefault();
+		$("#prev").off("click");
+		$("#instructions").fadeOut(500, function(){
+		
+			$("#instructions").empty();
+			if(i > 0) {
+				i--;
+				var $elem=$(elems[i]);
+				$("#instructions").append($elem);
+				$elem.fadeIn(500);
+				//$("#instructions").append(elems[i]);
+				console.log(elems[i]);
+				$("#next").fadeIn(500);
+				
+				if(i == 0) {
+					$("#prev").fadeOut(500);
+				}
+				
+			}
+			$("#instructions").fadeIn(500, function(){
+				$("#prev").on({
+					click: function(ev) {
+						prevClick(elems, ev);
+					}
+				});		
+			});
+		});
+	}
+	  
+  	$(document).ready(function(){
+		
+		/**
+		 * On click, this function executes what is in the user input box (#inbox) 
+		 * 
+		 * @param str - a string of user input from the input box (#inbox)
+		 * @param regex - selects the class/id from the input box (quotes inclusive)
+		 * @param funcstr - takes the selector and two methods/functions from the user input
+		 *
+		 * @return void
+		 */
+		$("#submit").click(function(e) {
+			e.preventDefault();
+			//findSelector();
+			
+			var str = $('#inbox').html();
+			//var regex1 = /\$\('|"(.*)"|'\)/gi; // selects the class/id without quotes
+			var regex1 = /\$\(('|")(.*)('|")\)/gi; // selects the class/id with quotes
+			
+			var funcstr = str.replace(regex1, "$($1#outbox $2$3)");
+			try
+			{
+				(new Function(funcstr))();	
+			}
+			catch(err) {
+				console.log(err.message);
+				alert(err.message);
+			}
+		});
+		
+		
+		/**
+		 * Gets the instructions from file jquerysteps.html to load into the #instructions div
+		 * 
+		 * @param elems - array of all of the step divs from jquerysteps.html
+		 *
+		 * @return void
+		 */
+ 		$.get("jquerysteps.html", function(data) {
+			var elems = $(data).filter(".steps").get();
+			$("#instructions").html(elems.shift());	
+			$("#prev").hide().on({
+				click: function(ev) {
+					prevClick(elems, ev);
+				}
+			});		
+			$("#next").on({
+				click: function(ev) {
+					nextClick(elems, ev);
+				}
+			});
+			
+		});
+		
+		$("#tabs ul li a").on('click', function(e){
+			e.preventDefault();
+			var tabId = $(this).attr("href");
+			$("#wrapper").children("div:not("+tabId+")").hide();
+			$("#wrapper").children(tabId).show();
+			$(".selected").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		$("#tabs ul li:first-child a").trigger("click");
+		
+	});	
+	
+	
+  </script>
+
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="leftcol">
+		
+			<div id="title">
+				<img class="titlebot" src="jquerybot.png" alt="Techranger Bot" />
+				<h1>Try jQuery</h1>
+				
+				<div id="titlebar">
+				</div>
+			</div>	
+			
+			<div id="instructions">
+				<!--
+				<h2>What is jQuery?</h2>
+				<p><strong>jQuery is a new kind of Javascript Library.</strong> jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.</p>
+				
+				<h2>Want to try it?</h2>
+				<p><strong>You can begin learning jQuery right here!</strong> This website will serve as a guide that leads you step-by-step in creating your first jQuery code. The instructions will appear right here, and you can type your code in to the right. It's simple!</p>
+				
+				<p>Type <code>start</code> in the green box and then hit <code>enter</code> to begin.</p>
+			
+				<span id="some">&lt;span id="some"&gt; text &lt;/span&gt;</span>
+				<br />
+				<span id="more">&lt;span id="more"&gt; text &lt;/span&gt;</span>
+				
+				-->
+			</div>
+			
+			<div id="prevnext">
+				<input id="prev" type='image' src="previous.png" alt='Previous' />
+				<input id="next" type='image' src="next.png" alt='Next' />
+			</div>
+		
+		</div>
+		
+		
+		
+		<div id="programarea">
+			<!-- 
+			<div id="input">
+				<p class="typehere">Type here:</p>
+				<input type="text" id="textinput" size="50">
+			</div>
+			-->
+			
+			<div id="inbox" contenteditable="true">
+			</div>
+
+			<input id="submit" type='image' src="submit.png" alt='Submit' />
+			
+			
+			<div id="bar">
+			</div>
+			
+			<div id="outbox">
+			
+				<div id="tabs">
+					<ul>
+						<li><a href="#code">Code</a></li>
+						<li><a href="#display">Display</a></li>
+					</ul>
+				</div>
+				
+				<div id="wrapper">
+					<div id="code">
+						<p>Meow meow meow</p>
+						<p>words words words</p>
+					<code><pre>
+&lt;html&gt;
+   &lt;head&gt; 
+   &lt;/head&gt;
+   &lt;body&gt; 
+	  <span id="introspan">&lt;span id="introtext"&gt;Edit me!&lt;/span&gt;</span>
+	  <p id="introp">&lt;p id="introp"&gt;This is a paragraph.&lt;/p&gt;</p>
+   &lt;/body&gt;
+&lt;/html&gt; 
+					</pre></code>
+					</div>
+					
+					<div id="display">
+						<p>Meow meow meow</p>
+						<p>Words words words</p>
+					</div>
+				</div>
+			
+			</div>
+		
+			<div id="helpbox">
+				<div id="helphints">
+					<h3>Helpful Hints</h3>
+					<p class="helptext">enter &rarr; submit code</p>
+					<p class="helptext">clear &rarr; clear your text area</p>
+					<p class="helptext">next &rarr; skip to the next step</p>
+					<p class="helptext">back &rarr; go back to the previous step</p>
+				</div>
+				
+				<div id="helpbot">
+					<img class="helpboxbot" src="helpbot.png" alt="Techranger Robot" />
+				</div>
+			</div>
+		
+		</div>
+		
+	</div>
+	
+	
+	
+	<div id="footer">
+			<p class="foottext">Created by Corrinne Schultze &amp; the Techrangers, University of Central Florida</p>
+			<p class="foottext">Last updated February 8, 2013</p>
+		</div>
+
+</body>
+</html>

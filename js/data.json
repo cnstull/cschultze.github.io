@@ -1,0 +1,66 @@
+{
+"artworks" : {
+	
+		"img/portfolioImages/d2_5.jpg" : {
+			"name" : "Drawing II",
+			"description" : "Human skeleton study. Charcoal and pastel on newsprint. 24x36 in."
+		},
+			
+		"img/portfolioImages/2d_1.jpg" : {
+			"name" : "2-Dimensional Design",
+			"description" : "Experimenting with basic shapes. Paint and painted paper on illustration board. 24x36 in."
+		},
+		
+		"img/portfolioImages/d2_3.jpg" : {
+			"name" : "Drawing II",
+			"description" : "Still life with female model and bovine skulls. Charcoal and pastel on newsprint. 24x36 in."
+		},
+		
+		
+		
+		
+		
+		"img/portfolioImages/d2_1.jpg" : {
+			"name" : "Drawing II",
+			"description" : "Still life with male model and human skeleton. Charcoal and pastel on newsprint. 24x36 in."
+		},
+		
+		"img/portfolioImages/3d_1.jpg" : {
+			"name" : "3-Dimensional Design",
+			"description" : "Wrench model made entirely out of paper products. Paper, illustration board, gesso."
+		},
+		
+		"img/portfolioImages/d2_2.jpg" : {
+			"name" : "Drawing II",
+			"description" : "Still life with male model, skeleton, cloth, and mirrors. Charcoal and pastel on newsprint. 24x36 in."
+		},
+		
+		
+		
+		
+		
+		"img/portfolioImages/2d_2.jpg" : {
+			"name" : "2-Dimensional Design",
+			"description" : "Composition with unconventional media. Aluminum, ribbon, popcorn, glue, and paint on illustration board. 24x36 in."
+		},
+		
+		"img/portfolioImages/3d_2.jpg" : {
+			"name" : "3-Dimensional Design",
+			"description" : "Abstract wrench model made entirely out of paper products. Paper, illustration board, gesso."
+		},
+		
+		"img/portfolioImages/d2_4.jpg" : {
+			"name" : "Drawing II",
+			"description" : "Still life with male and female models, skeleton, and cloth. Charcoal and pastel on newsprint. 24x36 in."
+		},
+		
+		
+		
+		
+		
+		"img/portfolioImages/3d_3.jpg" : {
+			"name" : "3-Dimensional Design",
+			"description" : "Non-representational wrench model made entirely out of paper products. Paper, illustration board, glue, gesso."
+		}
+	}
+}

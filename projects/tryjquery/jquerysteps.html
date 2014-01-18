@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Steps</title>
+</head>
+
+<body>
+<!-- Intro -->
+	<div id="selectors1" class="steps">
+		<h2>What is jQuery?</h2>
+		<p><strong>jQuery is a new kind of Javascript Library.</strong> jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.</p>
+		
+		<h2>Want to try it?</h2>
+		<p><strong>You can begin learning jQuery right here!</strong> This website will serve as a guide that leads you step-by-step in creating your first jQuery code. The instructions will appear right here, and you can type your code in to the right. It's simple!</p>
+		
+		<p>Type <code>start</code> to begin.</p>
+	</div>
+
+
+
+<!-- Selectors -->
+	<div id="selectors2" class="steps">
+		<h2>Selectors</h2>
+		<p>First we'll learn about selectors. Selectors do what their name suggests - they <strong>select</strong> stuff. In order to be able to manipulate something, you need to tell jQuery what you want to change. You do this by <strong>selecting</strong> different elements like this: <br />
+		<span class="introtext">$("#introtext");</span></p>
+		
+		<p><strong>$</strong> itself is an alias for the jQuery "class," therefore $() constructs a new jQuery object.</p>
+		
+		<p><strong>#introtext</strong> is what we are selecting. In this case, we are selecting the id called "introtext." This is similar to CSS where <strong>#</strong> stands for id and <strong>.</strong> stands for class. If introtext was a class instead of an id, you would select it like this: <br />
+		<span class="introtext">$("#introtext");</span></p>
+	</div>
+	
+	
+	<div id="selectors3" class="steps">
+		<h2>Selectors</h2>
+		<p>You can select all sorts of stuff:<br />
+		specific things (by <strong>id</strong> or <strong>class</strong><br />
+		or not so specific things (by type or tag).</p>
+		
+		<p>Say you want to select <em>all</em> items of the same type on a page. If you want to select all of the paragraphs, you would type:<br />
+		$("p");</p>
+		
+		<p>Don't forget the semicolon! Semicolons let jQuery know when you're done typing that line, just like some other programming languages.</p>
+	</div>
+	
+	
+	
+<!-- Effects -->
+	<div id="effects1" class="steps">
+		<h2>Effects</h2>
+		<p>Now we want to do something to what we've selected, which is all paragraphs on the page. In order to do this, we have to add some action.</p>
+		
+		<p>We're going to begin by adding an <strong>effect</strong> to our paragraphs. One simple effect we can add is <strong>"hide."</strong> Hiding an element makes it disappear from the screen, but it still exists in the code.</p>
+		
+		<p>We can hide the paragraphs by adding <strong>.hide()</strong> to the end of our selector. Don't forget the semicolon again!</p>
+	</div>
+	
+	
+	<div id="effects2" class="steps">
+		<h2>Effects</h2>
+		<p>Notice how the paragraphs don't appear now? They're still there, they're just hidden!</p>
+		
+		<p>But what good are they if they're completely invisible? What if we made a button that can hide and show the paragraphs?</p>
+		
+		<p>We'll make the button work with an <strong>event</strong>. An <strong>event</strong> is something that triggers the <strong>effect</strong>. In this case, our <strong>effect</strong> is <strong.hide();</strong></strong>
+		
+		<p>Let's start off by just making the button hide the text when it is clicked by a user. We'll do this by creating a function, and putting <strong>$("p").hide();</strong> inside of it. Add this line right <em>above</em> $("p").hide(); <br />
+		$("button").click(function(){</p>
+		
+		<p>Now we have to close the function <em>below</em> $("p").hide(); <br />
+		});</p>
+		
+		<p>Test your new button! Now when the button is clicked, all paragraphs on the page will be hidden. Let's change this button to also show them again.</p>
+	</div>
+	
+	
+	<div id="effects3" class="steps">
+		<h2>Effects</h2>
+		<p>In order to make the same button show the paragraphs, we can't just add the effect <strong>.show()</strong></p>
+		
+		<p>Why not? Because having both <strong>.show()</strong> and <strong>.hide()</strong> at the same time will cancel out. Basically every time the button is clicked, it will hide the paragraphs, but also show them again. This will happen in a split second, so you won't notice anything.</p>
+		
+		<p>In order to do this, we'll have to add a different effect: <strong>.toggle()</strong><br />
+		Replace "hide" with "toggle" so it reads: <br />
+		$("p").toggle(); </p>
+	</div>
+	
+	
+	<div id="effects4" class="steps">
+		<h2>Effects</h2>
+		<p>Now that we can make the text disappear and reappear, we should make it look nice while doing this. Right now, the text just suddenly goes away. What if we made it fade away, or slide upward?</p>
+		
+		<p>The effect .hide() is a function itself. The parentheses() mean that you can add more information to make it do things differently, or do more. Basically you're adding more information to say how you want something to be done specifically.</p>
+		
+		<p>Let's try adding in a number. An integer value will determmine how quickly or slowly jQuery does something. The lower the number, the faster it will do it. The higher the number, the slower it will do it. Think of the number in terms of split seconds. 1000 is about equal to 1 second. </p>
+		
+		<p>We'll try adding 1000 in. Change your toggle line to this: <br />
+		$("p").toggle(1000);</p>
+		
+		<p>Notice how the paragraphs disappear and reappear now? You just added a simple effect to make it look nicer! jQuery is all about doing more while writing less.</p>
+	</div>
+
+</body>
+</html>
