@@ -188,8 +188,7 @@ $(document).ready(function() {
 		// set #slideInner width equal to total width of all slides
 		$('#slideInner2').css('width', slideWidth2 * numberOfSlides2);
 		
-		
-		
+
 		// Insert left and right arrow controls in the DOM
 		$('.slideshow2')
 			.prepend('<span class="control2" id="leftControl2">Move left</span>')
@@ -251,8 +250,7 @@ $(document).ready(function() {
 		// set #slideInner width equal to total width of all slides
 		$('#slideInner3').css('width', slideWidth3 * numberOfSlides3);
 		
-		
-		
+
 		// Insert left and right arrow controls in the DOM
 		$('.slideshow3')
 			.prepend('<span class="control3" id="leftControl3">Move left</span>')
@@ -302,7 +300,7 @@ $(document).ready(function() {
 		
 		// remove scrollbar in JS
 		$('.slidesContainer4').css('overflow', 'hidden');
-		// wrap all .slides with #slideInner div
+		// wrap all .slides with #slideInner4 div
 		slides4.css('overflow', 'hidden').wrapAll('<div id="slideInner4"></div>')
 		// float left to display horizontally, readjust .slides width
 		.css({
@@ -312,7 +310,6 @@ $(document).ready(function() {
 
 		// set #slideInner4 width equal to total width of all slides
 		$('#slideInner4').css('width', slideWidth4 * numberOfSlides4);
-		
 		
 		
 		// Insert left and right arrow controls in the DOM
