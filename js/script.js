@@ -102,7 +102,7 @@ $(document).ready(function() {
 	
 	
 	
-	
+	// slideshow galleries are all separate so they don't control each other
 	// -----------------------------------------------------------------------------------
 	// Begin WEB work slideshow
 	// Making left/right controls to navigate galleries
@@ -230,6 +230,129 @@ $(document).ready(function() {
 		} // end code for art work slideshow
 
 
+
+		// -----------------------------------------------------------------------------------
+		// Begin certificates and awards slideshow
+		var currentPosition3 = 0; //current slide
+		var slideWidth3 = 780;
+		var slides3 = $('.slide3');
+		var numberOfSlides3 = slides3.length;
+		
+		// remove scrollbar in JS
+		$('.slidesContainer3').css('overflow', 'hidden');
+		// wrap all .slides with #slideInner div
+		slides3.css('overflow', 'hidden').wrapAll('<div id="slideInner3"></div>')
+		// float left to display horizontally, readjust .slides width
+		.css({
+			'float' : 'left',
+			'width' : slideWidth3,
+		});
+
+		// set #slideInner width equal to total width of all slides
+		$('#slideInner3').css('width', slideWidth3 * numberOfSlides3);
+		
+		
+		
+		// Insert left and right arrow controls in the DOM
+		$('.slideshow3')
+			.prepend('<span class="control3" id="leftControl3">Move left</span>')
+			.append('<span class="control3" id="rightControl3">Move right</span>');
+			
+		// hide left arrow control on first load
+		manageControls3(currentPosition3);
+		
+		// create event listeners for .controls clicks
+		$('.control3').bind('click', function(){
+			// determine new position
+				currentPosition3 = ($(this).attr('id')=='rightControl3') ? currentPosition3+1 : currentPosition3-1;
+				
+				// hide/show controls
+				manageControls3(currentPosition3);
+				//move slideInner using margin-left
+				$('#slideInner3').animate ({
+					'marginLeft' : slideWidth3*(-currentPosition3)
+				});
+			});
+			
+		// manageControls: Hides and shows controls depending on currentPosition
+		function manageControls3(position) {
+			// hide left arrow if position is first slide
+			if (position==0) { // position==0 is first slide
+				$('#leftControl3').hide() 
+			}
+			else {
+				$('#leftControl3').show() 
+			}
+			// hide right arrow is position is last slide
+			if(position==numberOfSlides3-1) { //numberOfSlides-1 is last slide
+				$('#rightControl3').hide() 
+			}
+			else {
+				$('#rightControl3').show()
+			}
+		} // end code for certificates and awards slideshow
+
+
+		// -----------------------------------------------------------------------------------
+		// Begin graphic work slideshow
+		var currentPosition4 = 0; //current slide
+		var slideWidth4 = 780;
+		var slides4 = $('.slide4');
+		var numberOfSlides4 = slides4.length;
+		
+		// remove scrollbar in JS
+		$('.slidesContainer4').css('overflow', 'hidden');
+		// wrap all .slides with #slideInner div
+		slides4.css('overflow', 'hidden').wrapAll('<div id="slideInner4"></div>')
+		// float left to display horizontally, readjust .slides width
+		.css({
+			'float' : 'left',
+			'width' : slideWidth4,
+		});
+
+		// set #slideInner4 width equal to total width of all slides
+		$('#slideInner4').css('width', slideWidth4 * numberOfSlides4);
+		
+		
+		
+		// Insert left and right arrow controls in the DOM
+		$('.slideshow4')
+			.prepend('<span class="control4" id="leftControl4">Move left</span>')
+			.append('<span class="control4" id="rightControl4">Move right</span>');
+			
+		// hide left arrow control on first load
+		manageControls4(currentPosition4);
+		
+		// create event listeners for .controls clicks
+		$('.control4').bind('click', function(){
+			// determine new position
+				currentPosition4 = ($(this).attr('id')=='rightControl4') ? currentPosition4+1 : currentPosition4-1;
+				
+				// hide/show controls
+				manageControls4(currentPosition4);
+				//move slideInner using margin-left
+				$('#slideInner4').animate ({
+					'marginLeft' : slideWidth4*(-currentPosition4)
+				});
+			});
+			
+		// manageControls: Hides and shows controls depending on currentPosition
+		function manageControls4(position) {
+			// hide left arrow if position is first slide
+			if (position==0) { // position==0 is first slide
+				$('#leftControl4').hide() 
+			}
+			else {
+				$('#leftControl4').show() 
+			}
+			// hide right arrow is position is last slide
+			if(position==numberOfSlides4-1) { //numberOfSlides-1 is last slide
+				$('#rightControl4').hide() 
+			}
+			else {
+				$('#rightControl4').show()
+			}
+		} // end code for graphic work slideshow
 
 
 	
