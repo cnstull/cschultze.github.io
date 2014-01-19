@@ -35,8 +35,8 @@ $(document).ready(function() {
 	$(".nav").click(function(e) {
 		e.preventDefault(); //prevents default of loading new page
 		
-		$(".red").removeClass("red"); //changes color of each nav link when clicked on
-		$(this).addClass("red");
+		$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
+		$(this).addClass("navlink");
 		
 		var href = $(this).attr('href'); //finds how far down each heading is
 		var off = $(href).offset(); //off is the variable of the offset amount
@@ -79,20 +79,20 @@ $(document).ready(function() {
 			//console.log(numscrolled);
 			
 			if($(window).scrollTop() < 600) {
-				$(".red").removeClass("red"); //changes color of each nav link when clicked on
-				$("#homelink").addClass("red");
+				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
+				$("#homelink").addClass("navlink");
 			}
 			else if($(window).scrollTop() >= 600 && $(window).scrollTop() < 1600) {
-				$(".red").removeClass("red"); //changes color of each nav link when clicked on
-				$("#portlink").addClass("red");
+				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
+				$("#portlink").addClass("navlink");
 			}
 			else if($(window).scrollTop() >= 1600 && $(window).scrollTop() < 2500) {
-				$(".red").removeClass("red"); //changes color of each nav link when clicked on
-				$("#aboutlink").addClass("red");
+				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
+				$("#aboutlink").addClass("navlink");
 			}
 			else if($(window).scrollTop() >= 2500) {
-				$(".red").removeClass("red"); //changes color of each nav link when clicked on
-				$("#contactlink").addClass("red");
+				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
+				$("#contactlink").addClass("navlink");
 			}
 		// end link color/scroll section
 		

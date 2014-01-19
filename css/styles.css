@@ -25,7 +25,7 @@ ul {
 	margin-top: 15px;	
 	padding: 0;
 }
-.red { /* Changes color of nav links when clicked on w/ Jquery */
+.navlink { /* Changes color of nav links when clicked on w/ Jquery */
 	color: #E6E63C !important; /* overrides other css */
 }
 .redbox{ /* red box around error boxes in contact form */
