@@ -170,62 +170,62 @@ $(document).ready(function() {
 
 		// -----------------------------------------------------------------------------------
 		// Begin ART work slideshow
-		var currentPositionA = 0; //current slide
-		var slideWidthA = 780;
-		var slidesA = $('.slideA');
-		var numberOfSlidesA = slidesA.length;
+		var currentPosition2 = 0; //current slide
+		var slideWidth2 = 780;
+		var slides2 = $('.slide2');
+		var numberOfSlides2 = slides2.length;
 		
 		// remove scrollbar in JS
-		$('.slidesContainerA').css('overflow', 'hidden');
+		$('.slidesContainer2').css('overflow', 'hidden');
 		// wrap all .slides with #slideInner div
-		slidesA.css('overflow', 'hidden').wrapAll('<div id="slideInnerA"></div>')
+		slides2.css('overflow', 'hidden').wrapAll('<div id="slideInner2"></div>')
 		// float left to display horizontally, readjust .slides width
 		.css({
 			'float' : 'left',
-			'width' : slideWidthA,
+			'width' : slideWidth2,
 		});
 
 		// set #slideInner width equal to total width of all slides
-		$('#slideInnerA').css('width', slideWidthA * numberOfSlidesA);
+		$('#slideInner2').css('width', slideWidth2 * numberOfSlides2);
 		
 		
 		
 		// Insert left and right arrow controls in the DOM
-		$('.slideshowA')
-			.prepend('<span class="controlA" id="leftControlA">Move left</span>')
-			.append('<span class="controlA" id="rightControlA">Move right</span>');
+		$('.slideshow2')
+			.prepend('<span class="control2" id="leftControl2">Move left</span>')
+			.append('<span class="control2" id="rightControl2">Move right</span>');
 			
 		// hide left arrow control on first load
-		manageControlsA(currentPositionA);
+		manageControls2(currentPosition2);
 		
 		// create event listeners for .controls clicks
-		$('.controlA').bind('click', function(){
+		$('.control2').bind('click', function(){
 			// determine new position
-				currentPositionA = ($(this).attr('id')=='rightControlA') ? currentPositionA+1 : currentPositionA-1;
+				currentPosition2 = ($(this).attr('id')=='rightControl2') ? currentPosition2+1 : currentPosition2-1;
 				
 				// hide/show controls
-				manageControlsA(currentPositionA);
+				manageControls2(currentPosition2);
 				//move slideInner using margin-left
-				$('#slideInnerA').animate ({
-					'marginLeft' : slideWidthA*(-currentPositionA)
+				$('#slideInner2').animate ({
+					'marginLeft' : slideWidth2*(-currentPosition2)
 				});
 			});
 			
 		// manageControls: Hides and shows controls depending on currentPosition
-		function manageControlsA(position) {
+		function manageControls2(position) {
 			// hide left arrow if position is first slide
 			if (position==0) { // position==0 is first slide
-				$('#leftControlA').hide() 
+				$('#leftControl2').hide() 
 			}
 			else {
-				$('#leftControlA').show() 
+				$('#leftControl2').show() 
 			}
 			// hide right arrow is position is last slide
-			if(position==numberOfSlidesA-1) { //numberOfSlides-1 is last slide
-				$('#rightControlA').hide() 
+			if(position==numberOfSlides2-1) { //numberOfSlides-1 is last slide
+				$('#rightControl2').hide() 
 			}
 			else {
-				$('#rightControlA').show()
+				$('#rightControl2').show()
 			}
 		} // end code for art work slideshow
 
