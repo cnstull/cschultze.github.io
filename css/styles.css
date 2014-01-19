@@ -320,7 +320,13 @@ div#container{
 							border-radius: 25px;
 							box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.4);
 						}
-					
+				
+			/* Certificates and Awards -------------------------------------- */
+			h3.award {
+				background: url("../img/pacman2.png") right center no-repeat;
+				padding-right: 40px;
+				margin-bottom: 10px;
+			}	
 					
 					
 				/* lightbox ---------------------------------- */	
