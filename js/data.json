@@ -15,11 +15,9 @@
 			"name" : "Drawing II",
 			"description" : "Still life with female model and bovine skulls. Charcoal and pastel on newsprint. 24x36 in."
 		},
+
 		
-		
-		
-		
-		
+
 		"img/portfolioImages/d2_1.jpg" : {
 			"name" : "Drawing II",
 			"description" : "Still life with male model and human skeleton. Charcoal and pastel on newsprint. 24x36 in."
@@ -34,10 +32,8 @@
 			"name" : "Drawing II",
 			"description" : "Still life with male model, skeleton, cloth, and mirrors. Charcoal and pastel on newsprint. 24x36 in."
 		},
-		
-		
-		
-		
+
+
 		
 		"img/portfolioImages/2d_2.jpg" : {
 			"name" : "2-Dimensional Design",
@@ -54,13 +50,31 @@
 			"description" : "Still life with male and female models, skeleton, and cloth. Charcoal and pastel on newsprint. 24x36 in."
 		},
 		
-		
-		
-		
+
 		
 		"img/portfolioImages/3d_3.jpg" : {
 			"name" : "3-Dimensional Design",
 			"description" : "Non-representational wrench model made entirely out of paper products. Paper, illustration board, glue, gesso."
-		}
+		},
+
+
+
+
+		"img/portfolioImages/tryjquery.png" : {
+			"name" : "Try jQuery",
+			"description" : "Try jQuery Interpreter Project. A project that was started at the Techrangers in 2012, but was put on the back burner in early 2013. It was built using jQuery to teach users jQuery. The interpreter works, but the tutorial was never finished."
+		},
+
+		"img/portfolioImages/galacticlacquer.png" : {
+			"name" : "Try jQuery",
+			"description" : "My personal blog, Galactic Lacquer. I focus on nail art, nail polish, and makeup reviews. I heavily modified the Blogger template and created all my own graphics. I also take and edit all of my own photos, and manage several social media pages for the blog as well."
+		},
+
+		"img/portfolioImages/galacticlacquer.png" : {
+			"name" : "Try jQuery",
+			"description" : "Techranger Site Redesign that is currently ongoing, which I am the project lead on. Everything has been made from scratch utilizing HTML5, CSS3, and PHP."
+		},
+		
+
 	}
 }
