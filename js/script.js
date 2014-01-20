@@ -42,7 +42,7 @@ $(document).ready(function() {
 		var off = $(href).offset(); //off is the variable of the offset amount
 		
 		
-	//also makes up for header size difference at top of screen
+		//also makes up for header size difference at top of screen
 		var headheight = $("#header").height(); 
 		var total = off.top-headheight-30;
 		$("html,body").animate({ // animates the movement
@@ -78,19 +78,19 @@ $(document).ready(function() {
 			numscrolled = $(window).scrollTop(); // tells how far the page is scrolled
 			//console.log(numscrolled);
 			
-			if($(window).scrollTop() < 600) {
+			if($(window).scrollTop() < 800) {
 				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
 				$("#homelink").addClass("navlink");
 			}
-			else if($(window).scrollTop() >= 600 && $(window).scrollTop() < 1600) {
+			else if($(window).scrollTop() >= 800 && $(window).scrollTop() < 2600) {
 				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
 				$("#portlink").addClass("navlink");
 			}
-			else if($(window).scrollTop() >= 1600 && $(window).scrollTop() < 2500) {
+			else if($(window).scrollTop() >= 2600 && $(window).scrollTop() < 3500) {
 				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
 				$("#aboutlink").addClass("navlink");
 			}
-			else if($(window).scrollTop() >= 2500) {
+			else if($(window).scrollTop() >= 3500) {
 				$(".navlink").removeClass("navlink"); //changes color of each nav link when clicked on
 				$("#contactlink").addClass("navlink");
 			}
