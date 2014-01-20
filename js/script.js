@@ -134,16 +134,16 @@ $(document).ready(function() {
 		
 		// create event listeners for .controls clicks
 		$('.control').bind('click', function(){
-			// determine new position
-				currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
-				
-				// hide/show controls
-				manageControls(currentPosition);
-				//move slideInner using margin-left
-				$('#slideInner').animate ({
-					'marginLeft' : slideWidth*(-currentPosition)
-				});
+		// determine new position
+			currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+			
+			// hide/show controls
+			manageControls(currentPosition);
+			//move slideInner using margin-left
+			$('#slideInner').animate ({
+				'marginLeft' : slideWidth*(-currentPosition)
 			});
+		});
 			
 		// manageControls: Hides and shows controls depending on currentPosition
 		function manageControls(position) {
@@ -199,16 +199,16 @@ $(document).ready(function() {
 		
 		// create event listeners for .controls clicks
 		$('.control2').bind('click', function(){
-			// determine new position
-				currentPosition2 = ($(this).attr('id')=='rightControl2') ? currentPosition2+1 : currentPosition2-1;
-				
-				// hide/show controls
-				manageControls2(currentPosition2);
-				//move slideInner using margin-left
-				$('#slideInner2').animate ({
-					'marginLeft' : slideWidth2*(-currentPosition2)
-				});
+		// determine new position
+			currentPosition2 = ($(this).attr('id')=='rightControl2') ? currentPosition2+1 : currentPosition2-1;
+			
+			// hide/show controls
+			manageControls2(currentPosition2);
+			//move slideInner using margin-left
+			$('#slideInner2').animate ({
+				'marginLeft' : slideWidth2*(-currentPosition2)
 			});
+		});
 			
 		// manageControls: Hides and shows controls depending on currentPosition
 		function manageControls2(position) {
@@ -261,16 +261,16 @@ $(document).ready(function() {
 		
 		// create event listeners for .controls clicks
 		$('.control3').bind('click', function(){
-			// determine new position
-				currentPosition3 = ($(this).attr('id')=='rightControl3') ? currentPosition3+1 : currentPosition3-1;
-				
-				// hide/show controls
-				manageControls3(currentPosition3);
-				//move slideInner using margin-left
-				$('#slideInner3').animate ({
-					'marginLeft' : slideWidth3*(-currentPosition3)
-				});
+		// determine new position
+			currentPosition3 = ($(this).attr('id')=='rightControl3') ? currentPosition3+1 : currentPosition3-1;
+			
+			// hide/show controls
+			manageControls3(currentPosition3);
+			//move slideInner using margin-left
+			$('#slideInner3').animate ({
+				'marginLeft' : slideWidth3*(-currentPosition3)
 			});
+		});
 			
 		// manageControls: Hides and shows controls depending on currentPosition
 		function manageControls3(position) {
@@ -322,16 +322,16 @@ $(document).ready(function() {
 		
 		// create event listeners for .controls clicks
 		$('.control4').bind('click', function(){
-			// determine new position
-				currentPosition4 = ($(this).attr('id')=='rightControl4') ? currentPosition4+1 : currentPosition4-1;
-				
-				// hide/show controls
-				manageControls4(currentPosition4);
-				//move slideInner using margin-left
-				$('#slideInner4').animate ({
-					'marginLeft' : slideWidth4*(-currentPosition4)
-				});
+		// determine new position
+			currentPosition4 = ($(this).attr('id')=='rightControl4') ? currentPosition4+1 : currentPosition4-1;
+			
+			// hide/show controls
+			manageControls4(currentPosition4);
+			//move slideInner using margin-left
+			$('#slideInner4').animate ({
+				'marginLeft' : slideWidth4*(-currentPosition4)
 			});
+		});
 			
 		// manageControls: Hides and shows controls depending on currentPosition
 		function manageControls4(position) {
@@ -402,14 +402,12 @@ $(document).ready(function() {
 						
 					if(!img.complete)
 					{
-						img.onload = addPicture;
+						img.onload = addPicture();
 					}
 					else
 					{
 						addPicture();
-					}
-
-									
+					}					
 			});
 			
 			
