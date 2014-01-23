@@ -377,7 +377,7 @@ $(document).ready(function() {
 			//$('.lbContent').append(img).append("<p>sfgdsfsdfsd</p>"); // appends text (descriptions) to the lightbox images
 			
 			
-			$.getJSON('data.json', function(data){
+			$.getJSON('js/data.json', function(data){
 			console.log(data,"HI");			
 				var i;
 				var artname;
