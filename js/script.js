@@ -402,7 +402,7 @@ $(document).ready(function() {
 						
 					if(!img.complete)
 					{
-						img.onload = addPicture();
+						img.onload = addPicture;
 					}
 					else
 					{
