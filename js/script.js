@@ -378,7 +378,7 @@ $(document).ready(function() {
 			
 			
 			$.getJSON('js/data.json', function(data){
-								
+			console.log(data,"HI");			
 				var i;
 				var artname;
 				var artdesc;
