@@ -1,5 +1,52 @@
 {
 	"artworks" : {
+
+		"img/portfolioImages/tryjquery.png" : {
+			"name" : "Try jQuery",
+			"description" : "Try jQuery Interpreter Project. A project that was started at the Techrangers in 2012, but was put on the back burner in early 2013. It was built using jQuery to teach users jQuery. The interpreter works, but the tutorial was never finished."
+		},
+
+		"img/portfolioImages/galacticlacquer.png" : {
+			"name" : "Galactic Lacquer",
+			"description" : "My personal blog, Galactic Lacquer. I focus on nail art, nail polish, and makeup reviews. I heavily modified the Blogger template and created all of my own graphics. I also take and edit all of my own photos, and manage several social media pages for the blog. I also maintain several PR relationships as well."
+		},
+
+		"img/portfolioImages/galacticlacquer.png" : {
+			"name" : "Techranger Team Site Redesign",
+			"description" : "I am the project lead on the current redesign of the Techranger team website. Everything has been made from scratch utilizing HTML5, CSS3, and PHP. I created the bulk of the code while updating an existing design that someone had mocked up in Photoshop a couple years ago."
+		},
+
+
+
+
+
+
+		"img/portfolioImages/gra1.jpg" : {
+			"name" : "Tech Time Flyer",
+			"description" : "I created a quick flyer for the Techrangers' first ever Extended Tech Time using Adobe Photoshop."
+		},
+
+		"img/portfolioImages/gra2.png" : {
+			"name" : "Tech Time Poster",
+			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop."
+		},
+
+		"img/portfolioImages/gra3.png" : {
+			"name" : "Tech Time Poster",
+			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop."
+		},
+
+
+
+		"img/portfolioImages/gra4.png" : {
+			"name" : "OneSearchLite Logo",
+			"description" : "I created a logo for OneSearchLite which is currently being used in the University of Central Florida's online webcourses in Canvas. The OneSearch logo already existed, but I modified it for the 'lite' use version."
+		},
+
+
+
+
+
 	
 		"img/portfolioImages/d2_5.jpg" : {
 			"name" : "Drawing II",
@@ -55,25 +102,12 @@
 		"img/portfolioImages/3d_3.jpg" : {
 			"name" : "3-Dimensional Design",
 			"description" : "Non-representational wrench model made entirely out of paper products. Paper, illustration board, glue, gesso."
-		},
-
-
-
-
-		"img/portfolioImages/tryjquery.png" : {
-			"name" : "Try jQuery",
-			"description" : "Try jQuery Interpreter Project. A project that was started at the Techrangers in 2012, but was put on the back burner in early 2013. It was built using jQuery to teach users jQuery. The interpreter works, but the tutorial was never finished."
-		},
-
-		"img/portfolioImages/galacticlacquer.png" : {
-			"name" : "Try jQuery",
-			"description" : "My personal blog, Galactic Lacquer. I focus on nail art, nail polish, and makeup reviews. I heavily modified the Blogger template and created all my own graphics. I also take and edit all of my own photos, and manage several social media pages for the blog as well."
-		},
-
-		"img/portfolioImages/galacticlacquer.png" : {
-			"name" : "Try jQuery",
-			"description" : "Techranger Site Redesign that is currently ongoing, which I am the project lead on. Everything has been made from scratch utilizing HTML5, CSS3, and PHP."
 		}
+
+
+
+
+		
 		
 
 	}
