@@ -3,7 +3,7 @@
 
 		"img/portfolioImages/tryjquery.png" : {
 			"name" : "Try jQuery",
-			"description" : "Try jQuery Interpreter Project. A project that was started at the Techrangers in 2012, but was put on the back burner in early 2013. It was built using jQuery to teach users jQuery. The interpreter works, but the tutorial was never finished."
+			"description" : "Try jQuery Interpreter Project. A project that was started by me at the Techrangers in 2012, but was put on the back burner in early 2013. It was built using jQuery to teach users jQuery. The interpreter works, but the tutorial was never finished."
 		},
 
 		"img/portfolioImages/galacticlacquer.png" : {
@@ -23,24 +23,29 @@
 
 		"img/portfolioImages/gra1.jpg" : {
 			"name" : "Tech Time Flyer",
-			"description" : "I created a quick flyer for the Techrangers' first ever Extended Tech Time using Adobe Photoshop."
+			"description" : "I created a quick flyer for the Techrangers' first ever Extended Tech Time using Adobe Photoshop. 2013"
 		},
 
 		"img/portfolioImages/gra2.png" : {
 			"name" : "Tech Time Poster",
-			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop."
+			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop. 2013"
 		},
 
 		"img/portfolioImages/gra3.png" : {
 			"name" : "Tech Time Poster",
-			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop."
+			"description" : "I created a poster featuring the Techranger robot for the Techrangers' second Tech Time conference using Adobe Photoshop. 2013"
 		},
 
 
 
 		"img/portfolioImages/gra4.png" : {
 			"name" : "OneSearchLite Logo",
-			"description" : "I created a logo for OneSearchLite which is currently being used in the University of Central Florida's online webcourses in Canvas. The OneSearch logo already existed, but I modified it for the 'lite' use version."
+			"description" : "I created a logo for OneSearchLite which is currently being used in the University of Central Florida's online webcourses in Canvas. The OneSearch logo already existed, but I modified it for the 'lite' use version. 2013"
+		},
+
+		"projects/dsi_project/dsirender.jpg" : {
+			"name" : "Nintendo DSi 3D Model",
+			"description" : "An assignment where I had to create an object of my choosing using Autodesk Maya. I chose a Nintendo DSi, and modeled and textured it myself from scratch. It looks dirty and broken to practice creating more interesting textures."
 		},
 
 
