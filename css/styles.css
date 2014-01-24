@@ -534,23 +534,51 @@ div#container{
 				font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 				color: #2B7880;
 				font-size: 14px;
-				margin-left: 270px;
-				margin-right: 50px;
+				margin: 0 50px 0 270px;
 			}
 			#contactthumbs {
 				height: 120px;
-				width: 415px;
+				width: 545px;
 				margin: 50px auto 0 auto;
 			}
-			#contactthumbs li {
-				display: inline-block;
-				margin: 10px 5px;
-			}
-			.contthumbs {
-				border-radius: 65px;
-				margin-left: 5px;
-				margin-right: 5px;
-			}
+				#contactthumbs li {
+					display: inline-block;
+					margin: 10px 5px 0 5px;
+					height: 113px;
+					width: 113px;
+					border-radius: 65px;
+				}
+					#linkedin {
+						background: url(../img/linkedin.png) no-repeat 0 0;
+					}
+						#linkedin:hover {
+							background: url(../img/linkedin2.png) no-repeat 0 0;
+						}
+
+					#twitter {
+						background: url(../img/twitter.png) no-repeat 0 0;
+					}
+						#twitter:hover {
+							background: url(../img/twitter2.png) no-repeat 0 0;
+						}	
+
+					#googleplus {
+						background: url(../img/googleplus.png) no-repeat 0 0;
+					}
+						#googleplus:hover {
+							background: url(../img/googleplus2.png) no-repeat 0 0;
+						}
+
+					#email {
+						background: url(../img/email.png) no-repeat 0 0;
+					}
+						#email:hover {
+							background: url(../img/email2.png) no-repeat 0 0;
+						}
+
+				.contthumbs {
+					
+				}
 		
 
 
@@ -564,12 +592,10 @@ div#container{
 			}
 			.footerp {
 				font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-				color: #2B7880;
 				font-size: 14px;
 				text-align: right;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				margin-right: 50px;	
+				color: #2B7880;
+				margin: 0 50px 0 0;
 			}
 			div#icon {
 				float: right;
