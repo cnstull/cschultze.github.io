@@ -216,43 +216,43 @@ div#container{
 			#leftControl {
 				top: 0;
 				left: 0;
-				background: transparent url(../img/leftarrow.png) no-repeat 0 0;
+				background: transparent url("../img/leftarrow.png") no-repeat 0 0;
 			}
 			#leftControl2 {
 				top: 0;
 				left: 0;
-				background: transparent url(../img/leftarrow.png) no-repeat 0 0;
+				background: transparent url("../img/leftarrow.png") no-repeat 0 0;
 			}
 			#leftControl3 {
 				top: 0;
 				left: 0;
-				background: transparent url(../img/leftarrow.png) no-repeat 0 0;
+				background: transparent url("../img/leftarrow.png") no-repeat 0 0;
 			}
 			#leftControl4 {
 				top: 0;
 				left: 0;
-				background: transparent url(../img/leftarrow.png) no-repeat 0 0;
+				background: transparent url("../img/leftarrow.png") no-repeat 0 0;
 			}
 
 			#rightControl {
 				top: 0;
 				right: 0;
-				background: transparent url(../img/rightarrow.png) no-repeat 0 0;
+				background: transparent url("../img/rightarrow.png") no-repeat 0 0;
 			}
 			#rightControl2 {
 				top: 0;
 				right: 0;
-				background: transparent url(../img/rightarrow.png) no-repeat 0 0;
+				background: transparent url("../img/rightarrow.png") no-repeat 0 0;
 			}
 			#rightControl3 {
 				top: 0;
 				right: 0;
-				background: transparent url(../img/rightarrow.png) no-repeat 0 0;
+				background: transparent url("../img/rightarrow.png") no-repeat 0 0;
 			}
 			#rightControl4 {
 				top: 0;
 				right: 0;
-				background: transparent url(../img/rightarrow.png) no-repeat 0 0;
+				background: transparent url("../img/rightarrow.png") no-repeat 0 0;
 			}
 
 			div#webwork { /* Web work ----------------------------------------------- */
@@ -492,6 +492,7 @@ div#container{
 						color: #2B7880;
 						font-size: 16px;
 						margin: 10px;
+						width: 400px;
 					}
 				
 		
@@ -543,42 +544,43 @@ div#container{
 			}
 				#contactthumbs li {
 					display: inline-block;
+				}
+				#contactthumbs a {
 					margin: 10px 5px 0 5px;
 					height: 113px;
 					width: 113px;
 					border-radius: 65px;
+					text-decoration: none;
+					display: inline-block;
 				}
 					#linkedin {
-						background: url(../img/linkedin.png) no-repeat 0 0;
+						background: url("../img/linkedin.png") 0 0 no-repeat;
 					}
 						#linkedin:hover {
-							background: url(../img/linkedin2.png) no-repeat 0 0;
+							background: url("../img/linkedin2.png") 0 0 no-repeat;
 						}
 
 					#twitter {
-						background: url(../img/twitter.png) no-repeat 0 0;
+						background: url("../img/twitter.png") 0 0 no-repeat;
 					}
 						#twitter:hover {
-							background: url(../img/twitter2.png) no-repeat 0 0;
+							background: url("../img/twitter2.png") 0 0 no-repeat;
 						}	
 
 					#googleplus {
-						background: url(../img/googleplus.png) no-repeat 0 0;
+						background: url("../img/googleplus.png") 0 0 no-repeat;
 					}
 						#googleplus:hover {
-							background: url(../img/googleplus2.png) no-repeat 0 0;
+							background: url("../img/googleplus2.png") 0 0 no-repeat;
 						}
 
 					#email {
-						background: url(../img/email.png) no-repeat 0 0;
+						background: url("../img/email.png") 0 0 no-repeat;
 					}
 						#email:hover {
-							background: url(../img/email2.png) no-repeat 0 0;
+							background: url("../img/email2.png") 0 0 no-repeat;
 						}
 
-				.contthumbs {
-					
-				}
 		
 
 
