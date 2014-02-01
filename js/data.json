@@ -107,12 +107,43 @@
 		"img/portfolioImages/3d_3.jpg" : {
 			"name" : "3-Dimensional Design",
 			"description" : "Non-representational wrench model made entirely out of paper products. Paper, illustration board, glue, gesso."
-		}
+		},
+
 
 
 
 
 		
+		"img/portfolioImages/09-13-2013_cert.png" : {
+			"name" : "IDL6543 Certificate",
+			"description" : "Certificate awarded for participating in the IDL6543 student panel at the University of Central Florida, September 13, 2013."
+		},
+		
+		"img/portfolioImages/12-02-2013_letter.png" : {
+			"name" : "IDL6543 Letter",
+			"description" : "'Thank you' letter for participating in the IDL6543 student panel at the University of Central Florida, December 2, 2013."
+		},
+		
+		"img/portfolioImages/05-17-2013_cert.png" : {
+			"name" : "IDL6543 Certificate",
+			"description" : "Certificate awarded for participating in the IDL6543 student panel at the University of Central Florida, May 17, 2013."
+		},
+
+
+		"img/portfolioImages/08-05-2013_letter.png" : {
+			"name" : "IDL6543 Letter",
+			"description" : "'Thank you' letter for participating in the IDL6543 student panel at the University of Central Florida, August 5, 2013."
+		},
+		
+		"img/portfolioImages/01-25-2013_cert.png" : {
+			"name" : "IDL6543 Certificate",
+			"description" : "Certificate awarded for participating in the IDL6543 student panel at the University of Central Florida, January 25, 2013."
+		},
+		
+		"img/portfolioImages/05-01-2013_letter.png" : {
+			"name" : "IDL6543 Letter",
+			"description" : "'Thank you' letter for participating in the IDL6543 student panel at the University of Central Florida, May 1, 2013."
+		}
 		
 
 	}
