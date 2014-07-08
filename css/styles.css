@@ -215,8 +215,8 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .contact-link { padding:5%; text-decoration:none; }
     .contact-link:hover { text-decoration: none; }
 .contact-img { width:15%; height:15%; }
-    .contact-img { fill:#666; }
-    .contact-img:hover { fill:#444; }
+    .contact-img { fill:#57b3af; }
+    .contact-img:hover { fill:#7accc8; }
 .contact-leftcol { border-right: 1px solid rgba(208, 217, 226, 0.4); padding-right: 60px; }
 .contact-rightcol { padding-left: 60px; }
 .margin-bottom { margin-bottom: 70px; }
