@@ -203,23 +203,26 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .hero-play-btn { height: 99px; width: 99px; background: url('../img/play-btn.png') no-repeat center center; display: block; text-indent: -99999px; margin: 80px auto 260px; transition: all 1s ease; -moz-transition: all 1s ease; -webkit-transition: all 1s ease; -o-transition: all 1s ease; }
 .hero-play-btn:hover, .hero-play-btn:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -o-transform: translate(0, -15px); -moz-transform: translate(0, -15px); }
 .contact-btn { background-color: #e8b968; border:3px solid #fff; padding:15px 80px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 22px; letter-spacing: 2px; box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; display: inline-block; }
-.contact-btn:hover, .get-started-btn:focus { text-decoration: none; background-color: #7accc8; }
+    .contact-btn:hover, .get-started-btn:focus { text-decoration: none; background-color: #7accc8; }
+
 .about { background: #57b3af; padding:70px 0px; }
 .about-photo { width:50%; float:right; }
 .about p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
 .about a { color:#2a6496; font-weight:500; }
 .about-btn { border: solid 3px #fff; background:#e8b968; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; letter-spacing: 2px; transition: all 0.5s ease; padding: 15px 70px; display: inline-block; color:#fff!important; }
-.about-btn:hover, .download-btn:focus { text-decoration: none; border-color: #fff; background:#7accc8; color:#fff; }
-.testimonials { background: #5b6869 url('../img/tBG01.jpg') no-repeat left center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 130px 0; }
+    .about-btn:hover, .download-btn:focus { text-decoration: none; border-color: #fff; background:#7accc8; color:#fff; }
+
 .contact { padding: 70px 0; }
 .contact p { color: #7a8387; font-size: 16px; word-spacing: 2px; line-height: 30px; }
 .contact-link { padding:5%; text-decoration:none; }
     .contact-link:hover { text-decoration: none; }
-.contact-img { width:15%; height:15%; fill:#57b3af; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.contact-img { width:15%; height:15%; fill:#57b3af; }
     .contact-img:hover { fill:#e8b968; }
 .contact-leftcol { border-right: 1px solid rgba(208, 217, 226, 0.4); padding-right: 60px; }
 .contact-rightcol { padding-left: 60px; }
 .margin-bottom { margin-bottom: 70px; }
+
 .try-btn { background-color: #f69679; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; color: #fff; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; display: inline-block; padding: 15px 50px; margin: 70px 0 70px; }
 .try-btn:hover, .try-btn:focus { background-color: #e37857; color: #fff; text-decoration: none; }
 .design { padding: 70px 0; background-color: #f6f6f4; position: relative; }
