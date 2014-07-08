@@ -215,9 +215,8 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .contact p { color: #7a8387; font-size: 16px; word-spacing: 2px; line-height: 30px; }
 .contact-link { padding:5%; text-decoration:none; }
     .contact-link:hover { text-decoration: none; }
-.contact-img { width:15%; height:15%; }
-    .contact-img { fill:#57b3af; }
-    .contact-img:hover { fill:#7accc8; }
+.contact-img { width:15%; height:15%; fill:#57b3af; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+    .contact-img:hover { fill:#e8b968; }
 .contact-leftcol { border-right: 1px solid rgba(208, 217, 226, 0.4); padding-right: 60px; }
 .contact-rightcol { padding-left: 60px; }
 .margin-bottom { margin-bottom: 70px; }
